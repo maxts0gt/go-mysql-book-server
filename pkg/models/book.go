@@ -8,9 +8,9 @@ import (
 var db *gorm.DB
 
 type Book struct {
-	gorm.model
-	Name        string `gorm:"json":"name"`
-	Author      string `"json":"author"`
+	gorm.Model
+	Name        string `gorm:""json:"name"`
+	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }
 
